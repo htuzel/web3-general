@@ -3,7 +3,7 @@ const {
 } = require("hardhat");
 
 async function main() {
-  const whitelistContract = await ethers.getContractFactory("whitelist");
+  const whitelistContract = await ethers.getContractFactory("Whitelist");
   const deployedWhitelistContract = await whitelistContract.deploy(100);
   await deployedWhitelistContract.deployed();
 
