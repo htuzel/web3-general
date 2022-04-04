@@ -15,7 +15,6 @@ describe("Crypto Devs", function () {
         cryptoDevs: null
       }
     beforeEach(async () => {
-        const [owner] = await ethers.getSigners();
         const Whitelist = await ethers.getContractFactory("Whitelist");
         const whitelist = await Whitelist.deploy("10");
         await whitelist.deployed();
