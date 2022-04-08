@@ -10,7 +10,7 @@ import "hardhat/console.sol";
 contract CryptoDevToken is ERC20, Ownable {
     uint256 public constant tokenPrice = 0.0001 ether;
     uint256 public constant tokensPerNFT = 10 * 10**18;
-    uint256 public constant maxTotalSupply = 100000 * 10**18;
+    uint256 public constant maxTotalSupply = 10000 * 10**18;
     ICryptoDevs CryptoDevsNFT;
     mapping(uint256 => bool) public tokenIdsClaimed;
 
